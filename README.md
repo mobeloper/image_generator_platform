@@ -1,4 +1,4 @@
-# image_generator_platform
+# 🎬 NetflixART  -  Netflix Movie Art Creator
 An app to create Netflix campaing artwork from text.
 
 ## Key Features:
