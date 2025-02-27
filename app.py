@@ -32,15 +32,17 @@ interface = gr.Interface(
     inputs=gr.Textbox(
         lines=3,
         placeholder="Describe your Netflix campaign visual...",
-        label="Creative Brief"
+        label="Describe the image you need"
     ),
     outputs=gr.Image(
         label="Generated Artwork",
         type="pil",
-        show_download_button=True
+        show_download_button=True,
+        show_flag_options=False  # Disables flagging functionality
     ),
     title="🎬 Netflix Campaign Creator",
-    description="Generate on-brand visuals for Netflix campaigns using AI. \n Example prompts: \n 1. 'Stranger Things retro poster with neon lights' or, \n 2. 'The Crown dramatic royal portrait in black and white'"
+    description="Generate on-brand visuals for Netflix campaigns using AI. \n Example prompts: \n 1. 'Stranger Things retro poster with neon lights' or, \n 2. 'The Crown dramatic royal portrait in black and white'",
+    allow_flagging="never"  # Completely disable flagging system
 )
 
 
