@@ -65,6 +65,15 @@ For port conflicts: sudo lsof -i :7860 then kill -9 PID
 
 For image generation failures: Check prompt guidelines
 
+### error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+
+Fix by increasing Git buffer size (run before pushing):
+
+git config --global http.postBuffer 1048576000  # 1GB buffer
+
+git config --global pack.windowMemory 256m
+
+git config --global pack.packSizeLimit 256m
 
 -----------------
 Build by:
