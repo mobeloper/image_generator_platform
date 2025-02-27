@@ -44,9 +44,9 @@ python app.py --port 9000
 
 Enter your prompt, for example: "Action movie poster with exploding spaceships, cinematic lighting".
 
-Output: Get professional-grade artwork in seconds.
+Output: Get professional-grade artwork in 20 seconds...
 
-![Sample generated image](./generated-sample.webp)
+![Sample generated image](https://raw.githubusercontent.com/mobeloper/image_generator_platform/refs/heads/main/generated-sample.webp)
 
 Download generated images to your device.
 
@@ -65,5 +65,7 @@ For port conflicts: sudo lsof -i :7860 then kill -9 PID
 
 For image generation failures: Check prompt guidelines
 
+
+-----------------
 Build by:
 Eric Michel

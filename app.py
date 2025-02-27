@@ -44,13 +44,10 @@ interface = gr.Interface(
 )
 
 
-
-application = gr.interface(
+interface.launch(
     server_name="0.0.0.0",
     server_port=7860,
     share=True  # Creates public link for collaboration
 )
 
 #interface.launch(share=False) # to disable sharing
-
-application.launch()
