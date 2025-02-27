@@ -23,6 +23,21 @@ then,
 export OPENAI_API_KEY="your-key"
 ```
 
+## Run the Application
+
+```
+python app.py
+```
+
+Expected outcome:
+```
+Running on local URL:  http://0.0.0.0:7860
+Running on public URL: https://xxxxxxxx-xxxx-xxxx.gradio.live
+```
+
+### Run on specific port
+python app.py --port 9000
+
 
 
 ## Usage Example:
@@ -31,11 +46,24 @@ Enter your prompt, for example: "Action movie poster with exploding spaceships, 
 
 Output: Get professional-grade artwork in seconds.
 
+![alt text](./generated-sample.webp)
+
+Download generated images to your device.
+
 If you want to iterate designs please refine your prompt.
 
-Download final assets for campaign deployment.
+
+## Typical workflow
+(1) Edit code -> (2) Save -> (3) App auto-reloads in browser
 
 
+## Troubleshooting Tips:
+
+If you get API errors, verify your OpenAI key
+
+For port conflicts: sudo lsof -i :7860 then kill -9 PID
+
+For image generation failures: Check prompt guidelines
 
 Build by:
 Eric Michel
