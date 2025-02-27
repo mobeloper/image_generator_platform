@@ -1,24 +1,14 @@
-
-
-
-
-
-
-#=================================
-
-
-## !pip install gradio openai requests pillow
-##
-
 import os
 import io
-import doten import load_dotenv
+from dotenv import load_dotenv
 
 import gradio as gr
 import openai
 import requests
 from PIL import Image
 
+load_dotenv()
+# openai_api_key = os.getenv("OPENAI_API_KEY")
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -50,11 +40,17 @@ interface = gr.Interface(
         show_download_button=True
     ),
     title="🎬 Netflix Campaign Creator",
-    description="Generate on-brand visuals for Netflix campaigns using AI. Example prompts: 'Stranger Things retro poster with neon lights' or 'The Crown dramatic royal portrait'"
+    description="Generate on-brand visuals for Netflix campaigns using AI. \n Example prompts: \n 1. 'Stranger Things retro poster with neon lights' or, \n 2. 'The Crown dramatic royal portrait in black and white'"
 )
 
-interface.launch(
+
+
+application = gr.interface(
     server_name="0.0.0.0",
     server_port=7860,
     share=True  # Creates public link for collaboration
 )
+
+#interface.launch(share=False) # to disable sharing
+
+application.launch()

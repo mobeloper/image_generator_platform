@@ -46,7 +46,7 @@ Enter your prompt, for example: "Action movie poster with exploding spaceships, 
 
 Output: Get professional-grade artwork in seconds.
 
-![alt text](./generated-sample.webp)
+![Sample generated image](./generated-sample.webp)
 
 Download generated images to your device.
 
