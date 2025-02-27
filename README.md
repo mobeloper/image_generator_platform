@@ -14,6 +14,17 @@ Shows download button for saving images.
 Runs on port 7860 with public sharing enabled.
 
 
+## Setup
+
+run this in terminal to install dependencies:
+```
+pip install -r requirements.txt
+then,
+export OPENAI_API_KEY="your-key"
+```
+
+
+
 ## Usage Example:
 
 Enter your prompt, for example: "Action movie poster with exploding spaceships, cinematic lighting".
@@ -23,6 +34,8 @@ Output: Get professional-grade artwork in seconds.
 If you want to iterate designs please refine your prompt.
 
 Download final assets for campaign deployment.
+
+
 
 Build by:
 Eric Michel
